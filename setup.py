@@ -8,7 +8,7 @@ with open('HISTORY.md') as history_file:
 
 setup(
     name='aws_get_secret',
-    version='1.0.0',
+    version='1.0.1',
     license='GNU GENERAL PUBLIC LICENSE Version 3',
     packages=find_packages(exclude=['venv', 'test']),
     description=('AWS package which helps your program to retrieve a secret value stored in AWS Secrets Manager.'),
