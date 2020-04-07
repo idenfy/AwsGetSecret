@@ -9,9 +9,6 @@ class GetSecret:
         self.__client = boto3.client(service_name='secretsmanager')
 
     def __getattr__(self, item):
-        return self.__getattribute__(item)
-
-    def __getattribute__(self, item):
         try:
             get_secret_value_response = self.__client.get_secret_value(
                 SecretId=item
