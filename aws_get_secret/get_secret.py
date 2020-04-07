@@ -25,5 +25,3 @@ class GetSecret:
             text_secret_data = base64.b64decode(binary_secret_data)
 
         return text_secret_data
-
-
